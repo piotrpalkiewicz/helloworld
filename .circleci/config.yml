@@ -26,10 +26,6 @@ jobs:
           region: europe-west1
           service-name: hello
           unauthenticated: true
-      - run:
-          command: |
-            pytest
-          name: Run tests
 orbs:
   cloudrun: circleci/gcp-cloud-run@1.0.0
 version: 2.1
