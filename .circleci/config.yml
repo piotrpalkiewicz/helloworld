@@ -33,4 +33,6 @@ workflows:
   build_and_deploy_to_managed_workflow:
     jobs:
       - build_test
-      - build_and_deploy
+      - build_and_deploy:
+          requires:
+            - build_test
